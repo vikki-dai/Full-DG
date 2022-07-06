@@ -47,7 +47,7 @@ The code is developed based on the [HigherHRNet project](https://github.com/HRNe
 * For **COCO data**, please download from [COCO download](https://cocodataset.org/#download), 2017 Train/Val is needed for COCO keypoints training and validation. We also provide person detection result of COCO val2017 and test-dev2017 to reproduce our multi-person pose estimation results. Please download and extract them under {POSE_ROOT}/data.  
 * For **CrowdPose data**, please download from [CrowdPose download](https://github.com/Jeff-sjtu/CrowdPose#dataset), Train/Val is needed for CrowdPose keypoints training and validation. Please download and extract them under {POSE_ROOT}/data.
 # Training and Testing
-* Testing on COCO-val dataset using [model zoo's models](https://github.com/vikki-dai/Full-DG/blob/main/model_zoo.txt)
+* Testing on COCO-val dataset using [model zoo's models](https://github.com/vikki-dai/Full-DG/blob/Full-DG/model_zoo.txt)
 ```python
   CUDA_VISIBLE_DEVICES=0 python tools/valid.py \
   --cfg experiments/coco/higher_hrnet/w32_512_adam_lr1e-3.yaml \
@@ -58,7 +58,7 @@ The code is developed based on the [HigherHRNet project](https://github.com/HRNe
   CUDA_VISIBLE_DEVICES=0,1,2,3 python tools/dist_train.py \
   --cfg experiments/coco/higher_hrnet/w32_512_adam_lr1e-3.yaml \
 ```
-* Testing on CrowdPose dataset using [model zoo's models](https://github.com/vikki-dai/RSGNet/blob/main/model_zoo.txt)
+* Testing on CrowdPose dataset using [model zoo's models](https://github.com/vikki-dai/Full-DG/blob/Full-DG/model_zoo.txt)
 ```python
   CUDA_VISIBLE_DEVICES=0 python tools/valid.py \
   --cfg experiments/crowd_pose/higher_hrnet/w32_512_adam_lr1e-3.yaml \
